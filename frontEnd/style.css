@@ -13,6 +13,14 @@ label{
 .submit {
     background-color: brown;
 }
+form{
+  width: 200px;       /* fixed width */
+  height: 450px;      /* fixed height */
+  margin: 0 auto;     /* center horizontally */
+  border-radius: 8px; /* optional rounded corners */
+  overflow-y: auto;   /* scroll if content exceeds height */
+}
+
 
 
 
