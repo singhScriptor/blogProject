@@ -1,0 +1,19 @@
+form{
+    background-color: navy;
+}
+
+label{
+    color:goldenrod;
+}
+.content{
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.submit {
+    background-color: brown;
+}
+
+
+
+

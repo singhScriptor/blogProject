@@ -1,36 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blog_Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <form id ="form">
-        <div class="main-header">
-            <h1>Create a New Blog Post</h1>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-div d-flex flex-lg-row flex-column">
+      <form id="form" class="form p-3 flex-fill">
+        <div
+          class="main-header text-white bg-info p-2 rounded text-center shadow-lg"
+        >
+          <h1>Create a New Blog Post</h1>
         </div>
-        <div class = "blog-details">
-            <label for="blog">Blog Title:</label><br>
-            <input type="text" name="blog" id ="blog" class="blog"required><br>
-            <label for="author">Blog Author:</label><br>
-            <input type="text" name="author" id="author" class="author" required><br>
-            <label for="content">Blog Content:</label><br>
-            <textarea name="content" id="content" class="content" required></textarea>
+        <div class="blog-details p-3 m-1 shadow shadow-lg rounded">
+          <label for="blog">Blog Title:</label><br />
+          <input
+            type="text"
+            name="blog"
+            id="blog"
+            class="blog p-1 w-100 rounded border-0"
+            required
+          />
+          <br />
+          <label for="author">Blog Author:</label><br />
+          <input
+            type="text"
+            name="author"
+            id="author"
+            class="author p-1 rounded border-0 w-100"
+            required
+          /><br />
+          <label for="content">Blog Content:</label><br />
+          <textarea
+            name="content"
+            id="content"
+            class="content p-2 w-100 rounded"
+            required
+          ></textarea>
         </div>
-        <div class="button">
-            <button type="submit" id="submit" class="submit">
-                Submit
-            </button>
+        <div class="button d-flex justify-content-center align-items-center">
+          <button
+            type="submit"
+            id="submit"
+            class="submit w-100 rounded border-0 p-2 text-white"
+          >
+            Submit
+          </button>
         </div>
-    </form>
-    <aside class="result">
-        <ul class="userlist" id="userlist">
+      </form>
+      <aside class="result flex-fill">
+        <ul class="userlist" id="userlist"></ul>
+      </aside>
+    </div>
 
-        </ul>
-    </aside>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
